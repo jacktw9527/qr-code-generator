@@ -7,7 +7,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - qr_code_generator_db_data:/var/lib/postgresql/data
 
   redis:
     image: redis:7
@@ -31,4 +31,5 @@ services:
       REDIS_URL: redis://redis:6379/0
 
 volumes:
-  postgres_data:
+  qr_code_generator_db_data:
+  qr_code_generator_redis_data:
