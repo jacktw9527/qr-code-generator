@@ -32,4 +32,3 @@ services:
 
 volumes:
   qr_code_generator_db_data:
-  qr_code_generator_redis_data:
